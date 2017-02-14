@@ -21,7 +21,8 @@ export class AppComponent {
   year: number = this.currentTime.getFullYear();
   tasks: Task[] = [
     new Task('Finish weekend Angular homework for Epicodus course'),
-  ];
+    new Task('Begin brainstorming possible JavaScript group projects'),
+    new Task('Add README file to last few Angular repos on GitHub')  ];
 }
 
 export class Task {
