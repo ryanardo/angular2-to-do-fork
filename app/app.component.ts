@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
       <h1>To Do List for {{month}}/{{day}}/{{year}}</h1>
       <h3>{{currentFocus}}</h3>
       <ul>
-        <li>{{firstTask.description}}</li>
+        <li *ngFor="let currentTask of tasks">{{currentTask.description}}</li>
       </ul>
     </div>
   `
