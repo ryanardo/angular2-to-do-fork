@@ -23,6 +23,10 @@ export class AppComponent {
     new Task('Finish weekend Angular homework for Epicodus course'),
     new Task('Begin brainstorming possible JavaScript group projects'),
     new Task('Add README file to last few Angular repos on GitHub')  ];
+
+  editTask() {
+    alert("You just requested to edit a Task!");
+  }
 }
 
 export class Task {
