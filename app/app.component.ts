@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
         <li [class]="priorityColor(currentTask)" (click)="isDone(currentTask)" *ngFor="let currentTask of tasks">{{currentTask.description}} <button (click)="editTask(currentTask)">Edit!</button></li>
       </ul>
       <hr>
-      <div>
+      <div *ngIf="selectedTask">
        <h3>{{selectedTask.description}}</h3>
        <p>Task Complete? {{selectedTask.done}}</p>
       <h3>Edit Task</h3>
