@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Task } from './task.model';
 
 @Component({
   selector: 'app-root',
@@ -47,9 +48,4 @@ export class AppComponent {
     this.selectedTask = null;
   }
 
-}
-
-export class Task {
-  public done: boolean = false;
-  constructor(public description: string, public priority: number) { }
 }
