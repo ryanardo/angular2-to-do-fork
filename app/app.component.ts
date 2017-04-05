@@ -6,9 +6,7 @@ import { Component } from '@angular/core';
       <div class="container">
        <h1>To Do List for {{month}}/{{day}}/{{year}}</h1>
        <h3>{{currentFocus}}</h3>
-       <ul>
-        <li [class]="priorityColor(currentTask)" (click)="isDone(currentTask)" *ngFor="let currentTask of tasks">{{currentTask.description}} <button (click)="editTask(currentTask)">Edit!</button></li>
-      </ul>
+      
       <hr>
       <div *ngIf="selectedTask">
         <h3>{{selectedTask.description}}</h3>
