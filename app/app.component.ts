@@ -14,6 +14,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+  selectedTask: Task = this.tasks[0];
   currentFocus: string = 'Angular Homework';
   currentTime = new Date();
   month: number = this.currentTime.getMonth() + 1;
