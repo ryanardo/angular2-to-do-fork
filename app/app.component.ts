@@ -39,7 +39,6 @@ export class AppComponent {
     new Task('Add README file to last few Angular repos on GitHub', 2)  ];
   selectedTask = null;
 
-
   editTask(clickedTask) {
     this.selectedTask = clickedTask;
   }
