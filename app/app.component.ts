@@ -62,6 +62,10 @@ export class AppComponent {
     }
   }
 
+  finishedEditing() {
+    this.selectedTask = null;
+  }
+
 }
 
 export class Task {
