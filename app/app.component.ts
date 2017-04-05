@@ -3,10 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-      <div class="container">
-       <h1>To Do List for {{month}}/{{day}}/{{year}}</h1>
-       <h3>{{currentFocus}}</h3>
-      
+    <div class="container">
+     <h1>To Do List for {{month}}/{{day}}/{{year}}</h1>
+     <h3>{{currentFocus}}</h3>
       <hr>
       <div *ngIf="selectedTask">
         <h3>{{selectedTask.description}}</h3>
@@ -39,24 +38,6 @@ export class AppComponent {
 
   editTask(clickedTask) {
     this.selectedTask = clickedTask;
-  }
-
-  isDone(clickedTask: Task) {
-    if(clickedTask.done === true) {
-      alert("This task is done!");
-    } else {
-      alert("This task is not done. Better get to work!");
-    }
-  }
-
-  priorityColor(currentTask){
-    if (currentTask.priority === 3){
-      return "bg-danger";
-    } else if (currentTask.priority === 2) {
-      return  "bg-warning";
-    } else {
-      return "bg-info";
-    }
   }
 
   finishedEditing() {
