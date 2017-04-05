@@ -20,9 +20,9 @@ export class AppComponent {
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
   tasks: Task[] = [
-    new Task('Finish weekend Angular homework for Epicodus course'),
-    new Task('Begin brainstorming possible JavaScript group projects'),
-    new Task('Add README file to last few Angular repos on GitHub')  ];
+    new Task('Finish weekend Angular homework for Epicodus course', 3),
+    new Task('Begin brainstorming possible JavaScript group projects', 2),
+    new Task('Add README file to last few Angular repos on GitHub', 2)  ];
 
   editTask() {
     alert("You just requested to edit a Task!");
@@ -40,5 +40,5 @@ export class AppComponent {
 
 export class Task {
   public done: boolean = false;
-  constructor(public description: string) { }
+  constructor(public description: string, public priority: number) { }
 }
