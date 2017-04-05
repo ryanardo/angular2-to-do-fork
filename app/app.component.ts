@@ -21,6 +21,7 @@ import { Component } from '@angular/core';
        <input type="radio" [(ngModel)]="selectedTask.priority" [value]="1">1 (Low Priority)<br>
        <input type="radio" [(ngModel)]="selectedTask.priority" [value]="2">2 (Medium Priority)<br>
        <input type="radio" [(ngModel)]="selectedTask.priority" [value]="3">3 (High Priority)
+       <button (click)="finishedEditing()">Done</button>
       </div>
     </div>
     `
